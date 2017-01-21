@@ -72,7 +72,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>com.github</groupId>
+            <groupId>com.github.linpn</groupId>
             <artifactId>jsplite</artifactId>
             <version>1.0.0</version>
         </dependency>
