@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2012 All Rights Reserved.
  */
-package com.alibaba.dubbo.rpc;
+package com.alibaba.dubbo.rpc.base;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
@@ -10,12 +10,12 @@ import org.apache.commons.lang.builder.ToStringStyle;
 import java.io.Serializable;
 
 /**
- * RPC Model.
+ * BASE Model.
  *
  * @author Linpn
  * @since 04.11.2015
  */
-public abstract class RpcModel implements Serializable {
+public abstract class Model implements Serializable {
 
     private static final long serialVersionUID = 5046534737074452170L;
 
