@@ -15,9 +15,14 @@ import java.io.Serializable;
  * @author Linpn
  * @since 04.11.2015
  */
-public class Model implements Serializable {
+public class Result<T> implements Serializable {
 
-    private static final long serialVersionUID = 5046534737074452170L;
+    public boolean success;
+
+    private T data;
+
+    private String msg;
+
 
     /**
      * 重新默认的toString()，用于输出日志等
