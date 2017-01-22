@@ -20,17 +20,17 @@ public class Result<T> implements Serializable {
     /**
      * 调用是否成功
      */
-    private boolean success;
+    private boolean success = false;
 
     /**
      * 调用返回的编码
      */
-    private int code;
+    private int code = 0;
 
     /**
      * 调用返回的信息
      */
-    private String msg;
+    private String msg = "";
 
     /**
      * 返回的数据
