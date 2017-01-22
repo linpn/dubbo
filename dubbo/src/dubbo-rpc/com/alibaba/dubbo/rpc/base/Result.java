@@ -17,12 +17,63 @@ import java.io.Serializable;
  */
 public class Result<T> implements Serializable {
 
-    public boolean success;
+    /**
+     * 调用是否成功
+     */
+    private boolean success;
 
-    private T data;
-
+    /**
+     * 调用返回的信息
+     */
     private String msg;
 
+    /**
+     * 返回的数据
+     */
+    private T data;
+
+
+    /**
+     * @see Result#success
+     */
+    public boolean isSuccess() {
+        return success;
+    }
+
+    /**
+     * @see Result#success
+     */
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    /**
+     * @see Result#msg
+     */
+    public String getMsg() {
+        return msg;
+    }
+
+    /**
+     * @see Result#msg
+     */
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    /**
+     * @see Result#data
+     */
+    public T getData() {
+        return data;
+    }
+
+    /**
+     * @see Result#data
+     */
+    public void setData(T data) {
+        this.data = data;
+    }
 
     /**
      * 重新默认的toString()，用于输出日志等
