@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2012 All Rights Reserved.
  */
-package com.alibaba.dubbo.rpc.base;
+package com.alibaba.dubbo.common;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
