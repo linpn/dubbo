@@ -23,6 +23,11 @@ public class Result<T> implements Serializable {
     private boolean success;
 
     /**
+     * 调用返回的编码
+     */
+    private int code;
+
+    /**
      * 调用返回的信息
      */
     private String msg;
@@ -45,6 +50,20 @@ public class Result<T> implements Serializable {
      */
     public void setSuccess(boolean success) {
         this.success = success;
+    }
+
+    /**
+     * @see Result#code
+     */
+    public int getCode() {
+        return code;
+    }
+
+    /**
+     * @see Result#code
+     */
+    public void setCode(int code) {
+        this.code = code;
     }
 
     /**
