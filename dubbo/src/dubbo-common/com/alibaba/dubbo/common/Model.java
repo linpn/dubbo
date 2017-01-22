@@ -4,9 +4,9 @@
  */
 package com.alibaba.dubbo.common;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import com.alibaba.dubbo.common.json.JSON;
 
+import java.io.IOException;
 import java.io.Serializable;
 
 /**
@@ -26,6 +26,10 @@ public class Model implements Serializable {
      * @see Object#toString()
      */
     public String toString() {
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        try {
+            return JSON.json(this);
+        } catch (IOException e) {
+            return this.toString();
+        }
     }
 }
