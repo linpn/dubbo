@@ -29,7 +29,7 @@ public class Model implements Serializable {
         try {
             return JSON.json(this);
         } catch (IOException e) {
-            return this.toString();
+            return super.toString();
         }
     }
 }
