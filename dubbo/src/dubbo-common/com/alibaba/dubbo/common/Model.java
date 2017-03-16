@@ -6,7 +6,6 @@ package com.alibaba.dubbo.common;
 
 import com.alibaba.dubbo.common.json.JSON;
 
-import java.io.IOException;
 import java.io.Serializable;
 
 /**
