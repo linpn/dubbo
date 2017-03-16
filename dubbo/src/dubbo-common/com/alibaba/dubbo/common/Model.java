@@ -28,7 +28,7 @@ public class Model implements Serializable {
     public String toString() {
         try {
             return JSON.json(this);
-        } catch (IOException e) {
+        } catch (Exception e) {
             return super.toString();
         }
     }
