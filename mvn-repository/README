@@ -1,0 +1,9 @@
+<repositories>
+    <repository>
+        <id>dubbo-mvn-repository</id>
+        <url>https://raw.githubusercontent.com/linpn/dubbo/master/mvn-repository</url>
+    </repository>
+</repositories>
+
+
+mvn clean deploy -P sonatype-oss-release -Darguments="gpg.passphrase=***"
