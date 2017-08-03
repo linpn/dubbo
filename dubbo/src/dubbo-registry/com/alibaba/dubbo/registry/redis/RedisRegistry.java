@@ -120,9 +120,9 @@ public class RedisRegistry extends FailbackRegistry {
 
         this.reconnectPeriod = url.getParameter(Constants.REGISTRY_RECONNECT_PERIOD_KEY, Constants.DEFAULT_REGISTRY_RECONNECT_PERIOD);
         String group = url.getParameter(Constants.GROUP_KEY, DEFAULT_ROOT);
-        if (!group.startsWith(Constants.PATH_SEPARATOR)) {
-            group = Constants.PATH_SEPARATOR + group;
-        }
+//        if (!group.startsWith(Constants.PATH_SEPARATOR)) {
+//            group = Constants.PATH_SEPARATOR + group;
+//        }
         if (!group.endsWith(Constants.PATH_SEPARATOR)) {
             group = group + Constants.PATH_SEPARATOR;
         }

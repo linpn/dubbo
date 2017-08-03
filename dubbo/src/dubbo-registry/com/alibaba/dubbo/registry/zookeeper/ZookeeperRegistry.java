@@ -15,14 +15,6 @@
  */
 package com.alibaba.dubbo.registry.zookeeper;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-
-import org.I0Itec.zkclient.exception.ZkNoNodeException;
-
 import com.alibaba.dubbo.common.Constants;
 import com.alibaba.dubbo.common.URL;
 import com.alibaba.dubbo.common.logger.Logger;
@@ -32,10 +24,17 @@ import com.alibaba.dubbo.common.utils.UrlUtils;
 import com.alibaba.dubbo.registry.NotifyListener;
 import com.alibaba.dubbo.registry.support.FailbackRegistry;
 import com.alibaba.dubbo.remoting.zookeeper.ChildListener;
-import com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient;
 import com.alibaba.dubbo.remoting.zookeeper.StateListener;
+import com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient;
 import com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter;
 import com.alibaba.dubbo.rpc.RpcException;
+import org.I0Itec.zkclient.exception.ZkNoNodeException;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * ZookeeperRegistry
@@ -64,9 +63,9 @@ public class ZookeeperRegistry extends FailbackRegistry {
     		throw new IllegalStateException("registry address == null");
     	}
         String group = url.getParameter(Constants.GROUP_KEY, DEFAULT_ROOT);
-        if (! group.startsWith(Constants.PATH_SEPARATOR)) {
-            group = Constants.PATH_SEPARATOR + group;
-        }
+//        if (! group.startsWith(Constants.PATH_SEPARATOR)) {
+//            group = Constants.PATH_SEPARATOR + group;
+//        }
         this.root = group;
         zkClient = zookeeperTransporter.connect(url);
         zkClient.addStateListener(new StateListener() {

@@ -341,7 +341,7 @@ public class Constants {
     public static final Pattern COMMA_SPLIT_PATTERN                = Pattern
                                                                            .compile("\\s*[,]+\\s*");
 
-    public final static String  PATH_SEPARATOR                     = "/";
+    public final static String  PATH_SEPARATOR                     = ":";
 
     public static final String  REGISTRY_SEPARATOR                 = "|";
 
