@@ -10,10 +10,10 @@
     <name>dubbo</name>
     <modules>
         <module>dubbo</module>
-        <module>dubbo-admin</module>
-        <module>dubbo-monitor</module>
-        <module>dubbo-demo/dubbo-demo-provider</module>
-        <module>dubbo-demo/dubbo-demo-consumer</module>
+        <!--<module>dubbo-admin</module>-->
+        <!--<module>dubbo-monitor</module>-->
+        <!--<module>dubbo-demo/dubbo-demo-provider</module>-->
+        <!--<module>dubbo-demo/dubbo-demo-consumer</module>-->
     </modules>
 
 </project>
