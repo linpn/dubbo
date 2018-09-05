@@ -218,7 +218,7 @@ public abstract class AbstractRegistry implements Registry {
             } else {
                 registryCacheExecutor.execute(new SaveProperties(lastCacheChanged.incrementAndGet()));
             }
-            logger.warn("Failed to save registry store file, cause: " + e.getMessage(), e);
+            //logger.warn("Failed to save registry store file, cause: " + e.getMessage(), e);
         }
     }
 
