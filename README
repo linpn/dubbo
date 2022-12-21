@@ -31,7 +31,7 @@ Add in pom.xml:
 
 <dependencies>
     <dependency>
-        <groupId>com.alibaba</groupId>
+        <groupId>com.github.linpn</groupId>
         <artifactId>dubbo</artifactId>
         <version>2.4.16</version>
     </dependency>
